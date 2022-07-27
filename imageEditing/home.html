@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vkEditor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+</head>
+<body>
+    <div class="container ">
+        <h2>Vk Image editor</h2>
+        <div class="wrapper">
+            <div class="editor-pase1">
+                <div class="filter">
+                    <label for="" class="title">Filters</label>
+                    <div class="options">
+                        <button id="Brightness" class="active">Brightness</button>
+                        <button id="Saturation">saturation</button>
+                        <button id="Inversion">Inversion</button>
+                        <button id="GreyScale">GreyScale</button>
+                    </div>
+                    <div class="slider">
+                        <div class="filter-info">
+                            <p class="name">Brightness</p>
+                            <p class="values">100%</p>                            
+                        </div>
+                        <input type="range" value="100" min="0" max="200">
+                    </div>
+                </div>
+                <div class="rotate">
+                    <label for="" class="title">Rotate & Filp</label>
+                    <div class="options">
+                        <button id="left"><i class="fa-solid fa-rotate-left"></i></button>
+                        <button id="right"><i class="fa-solid fa-rotate-right"></i></button>
+                        <button id="horizontal"><i class='bx bx-reflect-vertical'></i></button>
+                        <button id="vertical"><i class='bx bx-reflect-horizontal' ></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="preview-Image">
+                <img src="Untitled.png" alt="preview-Image">
+            </div>
+        </div>
+        <div class="controls">
+            <button class="reset-filters">Reset Filters</button>
+            <div class="row">
+                <input type="file" class="file-input" accept="image/*" hidden>
+                <button class="choose-img">choose Img</button>
+                <button class="save-img">Save Image</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
